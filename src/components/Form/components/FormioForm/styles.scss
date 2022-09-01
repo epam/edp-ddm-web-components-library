@@ -1,0 +1,21 @@
+.bootstrapFormStyles {
+  @import "~bootstrap/scss/bootstrap.scss";
+  // TODO: remove this after full builder stylization
+  // offset fix for legacy columns component in builder
+  // for some reason formio uses bootstrap 3 class names, so we made aliases
+  @for $i from 1 through ($grid-columns - 1) {
+    .col-md-offset-#{$i} {
+      @extend .offset-md-#{$i};
+    }
+  }
+}
+
+.formio-component-form {
+  .form-group {
+    margin-bottom: 1rem;
+  }
+}
+
+.formio-dialog .form-group.formio-component-checkbox {
+  margin-bottom: 0;
+}

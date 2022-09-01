@@ -1,0 +1,70 @@
+{
+    "extends": [
+      "eslint:recommended",
+      "airbnb-typescript",
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "plugins": [
+      "react",
+      "@typescript-eslint",
+      "react-hooks",
+      "import"
+    ],
+    "env": {
+      "browser": true,
+      "jasmine": true,
+      "jest": true
+    },
+    "settings": {
+      "react": {
+        "pragma": "React",
+        "version": "detect"
+      },
+      "import/resolver": {
+        "node": {
+          "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        }
+      }
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "project": "./tsconfig.eslint.json"
+    },
+    "rules": {
+      "linebreak-style": "off",
+      "react/static-property-placement": "off",
+      "react/jsx-filename-extension": "off",
+      "import/prefer-default-export": "off",
+      "lines-between-class-members": "off",
+      "arrow-body-style": "off",
+      "max-len": ["error", { "code": 120 }],
+      "react/jsx-one-expression-per-line": "off",
+      "@typescript-eslint/naming-convention": "off",
+      "react/prop-types": "off",
+      "react/require-default-props": "off",
+      "quotes": ["error", "single", { "avoidEscape": true }],
+      "react/jsx-props-no-spreading": "off",
+      "react/destructuring-assignment": [2, "always", { "ignoreClassFields": true }],
+      "react/state-in-constructor": [0],
+      "@typescript-eslint/explicit-module-boundary-types": "off",
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+      "import/no-extraneous-dependencies": ["error", {"devDependencies": true}]
+    },
+    "overrides": [
+      {
+        "files": ["src/**/__tests__/**"],
+        "rules": {
+          "@typescript-eslint/no-explicit-any": 0,
+          "react/display-name": 0
+        }
+      },
+      {
+        "files": ["src/**/storybook/**"],
+        "rules": {
+          "react/display-name": 0
+        }
+      }
+    ]
+  }

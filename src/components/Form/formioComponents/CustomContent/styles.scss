@@ -1,0 +1,65 @@
+$fontRegular: 'e-Ukraine-Regular';
+$fontLight: 'e-Ukraine-Light';
+
+.mdtuddm-content {
+  .ck-toolbar__items {
+    button.ck-button {
+      &:nth-of-type(1),
+      &:nth-of-type(2),
+      &:nth-of-type(6),
+      &:nth-of-type(7),
+      &:nth-of-type(8),
+      &:nth-of-type(9),
+      &:nth-of-type(10),
+      &:nth-of-type(11) {
+        display: none;
+      }
+    }
+
+    span.ck-toolbar__separator {
+      &:nth-of-type(2) {
+        display: none;
+      }
+    }
+
+    .ck-font-family-dropdown,
+    .ck-font-size-dropdown {
+      display: none;
+    }
+
+    .ck-heading-dropdown button.ck-button {
+      display: inline-block;
+    }
+  }
+
+  p,
+  li {
+    font-family: $fontLight;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  h2 {
+    font-family: $fontRegular;
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  h3 {
+    font-family: $fontRegular;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  h4 {
+    font-family: $fontRegular;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.formbuilder {
+  .mdtuddm-content {
+    // TODO: move this to theme
+    border: 2px dashed #ddd;
+  }
+}

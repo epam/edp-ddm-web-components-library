@@ -1,0 +1,9 @@
+.datepickerStyles,
+.react-datepicker__tab-loop {
+  @import "~react-datepicker/dist/react-datepicker";
+
+  .react-datepicker-popper {
+    padding-top: 0;
+    z-index: 1000000000;
+  }
+}

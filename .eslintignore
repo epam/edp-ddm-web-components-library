@@ -1,0 +1,7 @@
+dist
+storybook-static
+rollup.config.js
+setupTests.ts
+jest.config.js
+src/vendor/
+FileService.ts

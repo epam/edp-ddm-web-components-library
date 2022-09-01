@@ -1,0 +1,9 @@
+@mixin remove-error-styles {
+  &.formio-error-wrapper {
+    padding: 0;
+    background-color: inherit;
+  }
+  .formio-errors.invalid-feedback {
+    display: none;
+  }
+}

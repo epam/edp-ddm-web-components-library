@@ -1,0 +1,17 @@
+.ck.ck-toolbar-dropdown {
+  display: none;
+}
+
+.formio-dialog {
+  @import '~bootstrap/scss/bootstrap.scss';
+
+  .form-group.formio-component-checkbox {
+    margin-bottom: 0;
+  }
+  .formio-component-radio label {
+    display: inline-flex;
+  }
+  .fa {
+    font-family: 'FontAwesome';
+  }
+}
